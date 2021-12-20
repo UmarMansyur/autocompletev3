@@ -25,11 +25,11 @@ const getList = async (e: any) => {
       <div class="col m-3">
         
         <div class="mb-3 row">
-          <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+          <label for="staticEmail" class="col-sm-2 col-form-label">Username</label>
           <div class="col-sm-4">
             <Autocomplete :list="options" item-label="nama" v-model="value" class="form-control" @search="getList"></Autocomplete>
             <hr>
-            Nilai Model: {{ value }}
+            Nilai Model: {{ value.nama }}
           </div>
         </div>
 
